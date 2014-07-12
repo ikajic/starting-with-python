@@ -41,121 +41,107 @@
 
 # Starting with Python
 
-
 <img src="img/lab-flask.png" width="20%">
 
 <small> CogNovo Python workshop, July 2014 </small>
 
-<small> [Ivana Kajic](mailto:ivana.kajic@gmail.com) PhD student@Plymouth University | [@kajic_ivana](http://twitter.com/kajic_ivana) </small>
+<small> [Ivana](mailto:ivana.kajic@gmail.com) & [Jack](mailto:jack.mckayfletcher@plymouth.ac.uk) </small>
+<br>
+<small> PhD students@Plymouth University </small>
 
 ---
 
-<img src="img/pybrain.png" />
+## I am not a programmer or a computer scientist, why should I learn how to code?
 
 ---
 
-<section class="image-slide" data-background="img/brain.jpg">
+### Why you might want to learn how to code (..even if you're not a computer scientist!)
 
-## The human brain
+<img src="http://i1.ytimg.com/vi/JKWi5T2bSuc/hqdefault.jpg" width="20%">
 
-* Is only 2% of the weight of the body, but consumes approx. 25% of energy
+* It makes your daily interaction with computers easier and more efficient
 
-* Contains 100,000,000,000 neurons which are connected with 60,000,000,000,000 synapses. There are more synapses in the brain than stars in the Milky way!
+* By learning how to code you learn how computers work 
 
-* Grey brain matter (*neocortex*) is doing "the" job and white brain matter is for communication between neurons
+* Coding skills are useful in any branch
 
-* Unrolling the neocortex would give us around four A4 sheets
-
----
-
-<img src="http://upload.wikimedia.org/wikipedia/commons/3/30/Chemical_synapse_schema_cropped.jpg">
+* Develop computational thinking and fundamental computational skills
 
 ---
 
-## Can you actually explain how the whole brain works?
-
-* Maybe, but it is very hard. We split the problem of understanding the brain into smaller ones and divide them to various researchers:
-
-    * How does learning work?
-    * How is information encoded in the brain?
-    * How does human vision work?
-    * How do we know that we are happy and not sad?
+## What is programming?
 
 ---
 
-## Neuroscience
-
-* Studies central nervous system (brain + spinal cord)
-
-* Many different subdisciplines that investigate different aspects of human brain
-    
-    * Neurophysiology, neuroanatomy, clinical neuroscience, neurolinguistics, neuroeconomics and computational neuroscience...
-
-* Computational neuroscience is a young discipline that uses math, computer science, physics and psychology to explain mechanisms in the human brain
+### What is programming? ✓
+### What is a programming language?
 
 ---
 
-### Mind reading
-
-Work in progress in neurosciences: Is it possible to see what someone is thinking? 
-
-<img src="img/gallant.png" width="60%"/>
-<small> Image and research by [Jack Gallant's Lab](http://gallantlab.org/index.html) at the UC Berkeley</small>
+### What is programming? ✓
+### What is a programming language? ✓
+### Why do we need different programming languages?
 
 ---
 
-## Mind reading: get your data!
-
-* Brain recording using fMRI scanners
-
-<div style="float:left;"> 
-    <img src="http://upload.wikimedia.org/wikipedia/commons/b/bd/Modern_3T_MRI.JPG" width="45%" /> 
-    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Fmrtuebersicht.jpg/538px-Fmrtuebersicht.jpg" width="40%"/> 
-</div> 
-
+### What is programming? ✓
+### What is a programming language? ✓
+### Why do we need different programming languages? ✓
 
 ---
 
-### Mind reading: make sense out of data
+### Interpreted vs. Compiled programming languages
 
-* Make computational models and use them to make predictions
-
-* This is where computational neuroscience kicks in
-
-* Use of machine learning and data mining algorithms, simulations
-
-<div style="float:left;">
-	<img src="img/mr_model.png">
-	<img src="img/code.png" width="40%">
-</div>	
+<img src="img/ivsc.png" width="90%">
 
 ---
 
+<img src="img/interpretvscompile.png" width="70%">
 
-### So where did we need Python in the mind reading example?               
-
-* Process the data: e.g. remove noise caused by subject movements in the scanner
-
-* Store and organize the data in some sensible way
-
-* Extract patterns from data and build computational models
-
-* Make pretty plots of our results: helps to understand what is happening and useful for communication among scientists
+[Link](http://www.youtube.com/watch?v=_C5AHaS1mOA) to the cartoon about compilers and interpreters
 
 ---
 
+<img src="img/pypl.png" width="70%">
+<small> source: [https://sites.google.com/site/pydatalog/pypl/PyPL-PopularitY-of-Programming-Language](sites.google.com/site/pydatalog/pypl/PyPL-PopularitY-of-Programming-Language)</small>
 
-## Why did we choose Python?*                  
+---
 
-* It’s free and easy to use: already there on most *nix systems. Just run `python` in a terminal
+## Scientific computing
 
-* Great support: abundance of well maintained packages, especially tools needed in science
+* Programming to satisfy the scientist's needs:
+	* Building models and running computer simulations to get data
+	* Manipulate and process data
+	* Vizualize results, prepare figure for publications
 
-* Readable and clear code: hides low level implementation details while following common coding conventions
+* Scientist do not want to spend time 
 
-* Interactive: introspection of your code on the fly	
+* Programming languages: FORTRAN (Formula Translating System), C/C++/Java, Matlab, Python, R
 
-<small> * MATLAB, R and some other programming languages are also used</small>
+---
+
+<img src="img/pythonvsmatlab.png" width="70%">
+<small> source: [http://www.google.com/trends/explore#q=python%20tutorial%2C%20%20matlab%20tutorial&cmpt=q](http://www.google.com/trends/explore#q=python%20tutorial%2C%20%20matlab%20tutorial&cmpt=q) </small>
+
+---
+
+## Reasons to use Python
+
+* It’s **free**, cross-platform and easy to use -- already there on most *nix systems. Just run python in a terminal
+
+* Great **support** -- abundance of tools,  especially tools needed in science and great for beginners who want to learn how to code, a lot of documentation
+
+* Readable and **clear code** -- hides low level implementation details while following common coding conventions
+
+* **Interactive** -- introspect your code on the fly
+
+---
+
+<img src="img/pythonconsole.png" width="70%">
+
+---
+
+<img src="img/community.png" width="90%">
 
 ---
 
@@ -486,8 +472,7 @@ Output: 5
 
 * [Cython](http://cython.org/): Wrap external C libraries
 
-* [f2Py](http://cython.org/): Fortran to Python
-
+* [f2Py](http://cython.org/): Fortran to Python 
 * [swig](http://www.swig.org/): Turning C code into a Python module
 
 ---
@@ -526,7 +511,7 @@ Output: 5
 			margin: 0.0,
 
 			theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-			transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+			transition: 'fade', // default/cube/page/concave/zoom/linear/fade/none
 
 			// Optional libraries used to extend on reveal.js
 			dependencies: [
