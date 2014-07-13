@@ -39,9 +39,10 @@
 <section data-markdown data-separator="^\n---\n$">
 <script type="text/template">
 
-# Starting with Python
+<section class="image-slide" data-background="img/python_transp.png" data-background-size="30%">
 
-<img src="img/lab-flask.png" width="20%">
+# Starting with Python
+### with an introduction to programming
 
 <small> CogNovo Python workshop, July 2014 </small>
 
@@ -84,9 +85,7 @@
 
 ---
 
-### What is programming? ✓
-### What is a programming language? ✓
-### Why do we need different programming languages? ✓
+<img src="img/proglang.png" width="90%">
 
 ---
 
@@ -107,21 +106,21 @@
 
 ---
 
-## Scientific computing
-
-* Programming to satisfy the scientist's needs:
-	* Building models and running computer simulations to get data
-	* Manipulate and process data
-	* Vizualize results, prepare figure for publications
-
-* Scientist do not want to spend time 
-
-* Programming languages: FORTRAN (Formula Translating System), C/C++/Java, Matlab, Python, R
+## Why do scientists need to code?
+<img src="img/lab-flask.png" width="20%">
 
 ---
 
-<img src="img/pythonvsmatlab.png" width="70%">
-<small> source: [http://www.google.com/trends/explore#q=python%20tutorial%2C%20%20matlab%20tutorial&cmpt=q](http://www.google.com/trends/explore#q=python%20tutorial%2C%20%20matlab%20tutorial&cmpt=q) </small>
+## Scientific computing
+
+* Programming to satisfy the scientist's needs:
+	* Getting the data: experiments, recordings, computer simulations, building models
+	* Manipulate and process data
+	* Vizualize results in various ways, prepare figures for publications
+
+* Scientist do not want to spend time writing code, but doing research! 
+
+* FORTRAN (Formula Translating System), C/C++/Java, Matlab, Python, R
 
 ---
 
@@ -142,6 +141,19 @@
 ---
 
 <img src="img/community.png" width="90%">
+
+---
+
+### Under the hood
+
+* Python interpreter - 2 modes of operation:
+	* Directly interpret the script
+	* Interactive mode
+
+* Extensions to the interpreter and editor: [IPython](http://ipython.org/), [IPython Notebook](http://ipython.org/notebook.html) in the web browser or IDE (e.g. [Canopy](https://www.enthought.com/products/canopy/))
+ 
+
+* Extensions to support additional functionality depending on your needs (packages)
 
 ---
 
@@ -184,6 +196,10 @@
 
 ---
 
+<img src="img/canopy.png">
+
+---
+
 ## Dealing with numbers: NumPy
 
 * [NumPy](http://www.numpy.org/) is a powerful Python package for efficient manipulation with numbers 
@@ -192,7 +208,7 @@
 
 * Numbers are stored in containers called `arrays` 
 
-* For MATLAB users planning to switch to Python there is a [cheat sheet](http://wiki.scipy.org/NumPy_for_Matlab_Users)
+* For users familiar with MATLAB there is a [cheat sheet](http://wiki.scipy.org/NumPy_for_Matlab_Users) showing Python-equivalents
  
 
 ---
@@ -385,7 +401,7 @@ Number of words: 192427
 
 ---
 
-<section class="image-slide" data-background="img/scikit_classifiers_.png">
+<section class="image-slide" data-background="img/scikit_classifiers_.png" data-background-size="70%" data-background-color="#ffffff">
 
 ---
 
@@ -464,18 +480,6 @@ Output: 5
 
 ---
 
-## Python as a glue
-
-* Python can be used to wrap libraries in other programming languages such as C, C++ , Java or Fortran (which are also used in science)
-
-* This is useful when you need to speed up the execution of Python code or the libraries you need don't exist in Python
-
-* [Cython](http://cython.org/): Wrap external C libraries
-
-* [f2Py](http://cython.org/): Fortran to Python 
-* [swig](http://www.swig.org/): Turning C code into a Python module
-
----
 
 ## Hands-on session
 
