@@ -20,8 +20,7 @@ you download the software for the right platform (Windows or Mac), and the right
 information by right click on My Computer and Properties in Windows. On Mac follow the
 instructions [here](http://support.apple.com/kb/ht3696).
 Once Canopy is installed, you can check if it works properly by opening Enthought
-Canopy. You should see the following window open:
-If it opens you are ready for the workshop!
+Canopy. 
 
 Experienced Mac/Linux users:
 ---
