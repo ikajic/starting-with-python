@@ -582,8 +582,243 @@ Output: 5
 ---
 
 ## "Hello World"
-
 ### Your first Python program!
+
+---
+
+## Variables in Python
+In Python variables are like labels given to objects:
+```python
+>>> a = 1
+```
+<img src="http://python.net/~goodger/projects/pycon/2007/idiomatic/a1tag.png", align="centre">
+```python
+>>> a = 2
+```
+<img src="http://python.net/~goodger/projects/pycon/2007/idiomatic/a2tag.png", align="centre">
+```python
+>>> b = a
+```
+<img src="http://python.net/~goodger/projects/pycon/2007/idiomatic/ab2tag.png", align="centre">
+
+---
+
+## Some Built in Variable Types
+
+* <bf>ints</bf>: 0, ±1, ±2, ±3, ±4,….
+* <bf>floats</bf>: -0.11, 0.012, 1.13, 3.141592, 2.71828
+* strings: "The Life of Brian", "The Flying Circus"
+* bools: True, False
+* lists: ["Chapman", "Cleese", "Gilliam", "Idle", "Jones", "Palin"], ["Chapman", 33, 3.14, False]
+
+---
+
+## Some Built in Operators
+
+* \+ (addition)
+
+```python
+>>> 1 + 2
+3
+>>> [1,2,3] + [4,5]
+[1,2,3,4,5,6]
+>>> "Hello" + "World!"
+"Hello World!"
+```
+
+* \- (subtraction)
+
+```python
+>>> 1 - 2
+-1
+```
+
+* \* (multiplication)
+
+```python
+>>> 2*3
+6
+>>> [0]*3
+[0, 0, 0]
+```
+
+* / (division)
+
+```python
+>>> 6/2
+3
+>>> 1/3
+0 #What!?
+>>> 1.0/3
+0.3333333333333333 #Thats better
+>>> 1/0
+? #Your first python error!
+```
+
+---
+
+## More Operators
+
+* % (modulo)
+
+```python
+>>> 6 % 3 
+0
+>>> 6 % 4
+2
+```
+
+* \** (power)
+
+```python
+>>> 2**3
+8
+>>> 10**4
+10000
+```
+
+* or (logical or)
+
+```python
+>>> True or False
+True
+>>> False or False
+False
+```
+
+* and (logical and)
+
+```python
+>>> True and False
+False
+>>> True and True
+True
+```
+
+---
+
+## Even more operators
+
+
+* not (logical not)
+
+```python
+>>> not True
+False
+>>> not False
+True
+>>> not not not not True
+?
+```
+	
+* == (equal)
+
+```python
+>>> 6 == 5 + 1
+True
+```
+
+* != (not equal)
+
+```python
+>>> 5 != 5
+False
+```
+
+* < (less than)
+
+```python
+>>> 2 < 3
+True
+>>> 2**3 < 3**2
+?
+```
+
+---
+
+## Functions
+<img src="http://www.teachingepsilon.com/wp-content/uploads/2013/03/function-box-300x249.jpg", align="centre">
+
+We define functions in python like this:
+
+```python
+def adds_two(x):
+	return x + 2
+
+>>> adds_two(4)
+6
+```
+
+---
+
+### Exercise 1: Make a function that returns true if its input is divisible by 3 and false otherwise
+
+---
+
+## Did anyone get it?
+
+```python
+def div_three(x):
+	return x % 3 == 0
+
+
+>>> div_three(9)
+True
+>>> div_three(10)
+False
+```
+
+---
+
+## If Statements 
+
+```python
+if (some statement is true):
+	(Do something)
+else:
+	(Do this other thing)
+```
+<br>
+For example this function multiples its input by three if it is even and by two if it is odd:
+
+```python
+def example_func(x):
+	if x % 2 == 0:
+		return x*3
+	else:
+		return x*2		
+```
+
+---
+
+## Exercise 2: Make a function which squares its input only if the input is 3 or 5 otherwise it returns its input + 1
+
+---
+
+## The answer...
+
+```python
+
+
+
+
+-- For loops
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 </script>            
