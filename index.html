@@ -56,7 +56,8 @@
 
 ---
 
-### Why you might want to learn how to code (..even if you're not a computer scientist!)
+### Why you might want to learn how to code 
+#### (... even if you're not a computer scientist!)
 
 <img src="http://i1.ytimg.com/vi/JKWi5T2bSuc/hqdefault.jpg" width="20%">
 
@@ -144,24 +145,53 @@
 
 ---
 
-### Under the hood
-
-* Python interpreter - 2 modes of operation:
-	* Directly interpret the script
-	* Interactive mode
-
-* Extensions to the interpreter and editor: [IPython](http://ipython.org/), [IPython Notebook](http://ipython.org/notebook.html) in the web browser or IDE (e.g. [Canopy](https://www.enthought.com/products/canopy/))
- 
-
-* Extensions to support additional functionality depending on your needs (packages)
+### Diving into Python
 
 ---
 
-## Where Python meets Science
+### Under the hood
+
+* Python interpreter - 2 modes of operation:
+	* Pass the script directly to the interpreter
+```shell
+ivana@lyra:~$ python hello.py 
+hello
+ivana@lyra:~$ 
+```
+	* Interactive mode
+```shell
+ivana@lyra:~$ python 
+Python 2.7.3 (default, Mar 13 2014, 11:03:55) 
+[GCC 4.7.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+```
+
+* **Packages**: Extensions to support additional functionality in Python 
+
+---
+
+### Python packages and tools will see today:
+
+* Extensions to the interpreter and the editor: [IPython](http://ipython.org/), [IPython Notebook](http://ipython.org/notebook.html) or IDE (e.g. [Canopy](https://www.enthought.com/products/canopy/))
+
+* Maths and numeric manupulations: [NumPy](http://www.numpy.org/)
+
+* Plotting and visualization: [Matplotlib](http://matplotlib.org/)
+
+* Natural language processing: [NLTK](http://nltk.org/)
+
+* Psychophysics: [PsychoPy](http://www.psychopy.org/)
+
+* Machine learning, data processing and data mining: [Scikit-learn](http://scikit-learn.org/stable/index.html), [MDP](http://mdp-toolkit.sourceforge.net/)
+
+---
+
+## Satisfying basic scientists' needs 
 
 <img src="img/scipy.png">
 
-* [SciPy](http://www.scipy.org/) Stack is open-source bundle of Python packages for mathematics, science, and engineering
+* [SciPy](http://www.scipy.org/) Stack is a bundle of Python packages for mathematics, science, and engineering
 
 * Some of the included packages in the SciPy stack: NumPy, SciPy library, Matplotlib, IPython, Pandas...
 
@@ -172,7 +202,7 @@
 
 ---
 
-## Step 0: IPython
+## IPython
 
 * [IPython](http://ipython.org/) is a simple yet powerful interactive environment to write Python code
 
@@ -391,6 +421,40 @@ Number of words: 192427
 
 ---
 
+## <img src="img/psychopy.png" width="40%">
+
+* [PsychoPy](http://www.psychopy.org/): stimulus presentation and control for a wide range of neuroscience, psychology and psychophysics experiments
+
+* Free and a powerful alternative to to Presentation™ or e-Prime™
+
+
+---
+
+<img src="img/psychopy-builder.png" width="80%">
+
+---
+
+<img src="img/psychopystim.png" width="50%">
+
+---
+
+### PsychoPy features
+
+* Huge variety of stimuli generated in real-time:
+	* Gratings, random dots, movies, text, sound...
+
+* Flexible stimulus units (degrees, cm, pixel)
+
+* Cross-platform: Windows, OS X, Linux
+
+* [Coder](http://www.psychopy.org/coder/coder.html#coder) and [Builder](http://www.psychopy.org/builder/builder.html#builder) interface
+
+* Input from keyboard, mouse, microphone or button boxes
+
+
+
+---
+
 ## <img src="img/scikit.png" width="40%">
 
 * [Scikit-learn](http://scikit-learn.org/stable/index.html): satisifes all the data mining and data analysis needs 
@@ -480,18 +544,7 @@ Output: 5
 
 ---
 
-
-## Hands-on session
-
-* There are two tutorials, pick the one you like!
-
-* [Basic tutorial](https://github.com/ikajic/pyscience/): Very simple data analysis using NumPy and Matplotlib
-    * Recommended for Python beginners
-    * The tutorial explains how to install the packages you need
-
-* [Advanced tutorial](http://scikit-learn.org/stable/tutorial/basic/tutorial.html#introduction): Introduction to machine learning with scikit-learn: Handwritten digit recognition 
-    * For those of you who already used Python and have basic NumPy experience 
-    * Installing instructions are available [here](http://scikit-learn.org/stable/install.html)
+### End of the 1st part
 
 </script>            
 </section>                                       
