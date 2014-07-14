@@ -554,7 +554,7 @@ In Python variables are like labels given to objects:
 3
 >>> [1,2,3] + [4,5]
 [1,2,3,4,5,6]
->>> "Hello" + "World!"
+>>> "Hello " + "World!"
 "Hello World!"
 ```
 
@@ -565,13 +565,15 @@ In Python variables are like labels given to objects:
 -1
 ```
 
+---
+
 * \* (multiplication)
 
 ```python
 >>> 2*3
 6
 >>> [0]*3
-[0, 0, 0]
+?
 ```
 
 * / (division)
@@ -580,11 +582,11 @@ In Python variables are like labels given to objects:
 >>> 6/2
 3
 >>> 1/3
-0 #What!?
+?
 >>> 1.0/3
-0.3333333333333333 #Thats better
+? 
 >>> 1/0
-? #Your first python error!
+? 
 ```
 
 ---
@@ -608,6 +610,8 @@ In Python variables are like labels given to objects:
 >>> 10**4
 10000
 ```
+
+---
 
 * or (logical or)
 
@@ -650,6 +654,8 @@ True
 True
 ```
 
+---
+
 * != (not equal)
 
 ```python
@@ -675,6 +681,7 @@ We define functions in python like this:
 
 ```python
 def adds_two(x):
+	#This function adds two to things
 	return x + 2
 
 >>> adds_two(4)
@@ -730,13 +737,107 @@ def example_func(x):
 ## The answer...
 
 ```python
+def my_second_func(x):
+	if x==5 or x==3:
+		return x**2 #You could write this x*x
 
+	else:
+		return x + 1
 
+```
 
+---
 
--- For loops
+## Lists
 
+Making Lists:
+```python
+>>> xs = [0,1,2,3,4,5,6,7,8,9]
+>>> ys = range(10)
+[0,1,2,3,4,5,6,7,8,9]
+>>> ys == xs #Just making sure xs and ys are the same
+True
+>>> xs[4] #Getting the 4th item from the list!
+4
+>>> xs.append(10) #adding the number 10 to the end of the list
+>>> xs
+[0,1,2,3,4,5,6,7,8,9,10]
 
+```
+
+---
+
+## For loops
+
+* A for loop goes through each item in a list and does something to it. 
+* The following function takes a list return the result of adding two to each item in it:
+
+```python
+def add_two_again(xs):
+	new = []
+	for x in xs:
+		new.append(x+2)
+
+	return new 
+
+>>> print add_two_again([1,2,3])
+[3,4,5]
+```
+
+---
+
+## If statements and for loops
+
+* We can combine if statements and for loops.
+* What do you think the following function does?
+
+```python
+def mystery_func(xs):
+	new = []
+	for x in xs:
+		if x==2:
+			new.append(x)
+
+		else: 
+			new.append(x+1)
+
+	return new
+
+>>> print mystery_func([1,2,2,1])
+?
+
+```
+
+---
+
+## Exercise 3: Make a function that takes a list and returns only the even items in that list.
+
+---
+
+## The answer...
+
+```python
+def gets_evens(xs):
+	new = []
+	for x in xs:
+		if x % 2 = 0:
+			new.append(x)
+	return new
+
+>>> print get_evens([1,2,3,4,5,6])
+[2,4,6]
+```
+
+Or for the pros:
+
+```python
+def get_evens(xs):
+	return filter(lambda x: x % 2 ==0,xs)
+```
+
+---
+
+## Importing packages!
 
 
 
