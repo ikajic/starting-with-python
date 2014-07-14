@@ -1,7 +1,7 @@
 Python workshop for the CogNovo students
 ===
 
-Installation instructions for the Python workshop on Jul 15th.
+Installation instructions for the Python workshop on Jul 15th 2014.
 
 
 These instructions explain what you need to install depending on your experience and the
