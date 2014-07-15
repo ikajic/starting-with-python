@@ -537,7 +537,7 @@ In Python variables are like labels given to objects:
 
 ## Some Built in Variable Types
 
-* <bf>ints</bf>: 0, ±1, ±2, ±3, ±4,….
+* <bf>ints</bf>: 0, 1, 2, 3, 4,... and -1,-2,-3,-4... 
 * <bf>floats</bf>: -0.11, 0.012, 1.13, 3.141592, 2.71828
 * strings: "The Life of Brian", "The Flying Circus"
 * bools: True, False
@@ -757,7 +757,7 @@ Making Lists:
 [0,1,2,3,4,5,6,7,8,9]
 >>> ys == xs #Just making sure xs and ys are the same
 True
->>> xs[4] #Getting the 4th item from the list!
+>>> xs[4] #Getting the 4th item from the list (counting from 0)!
 4
 >>> xs.append(10) #adding the number 10 to the end of the list
 >>> xs
@@ -770,7 +770,7 @@ True
 ## For loops
 
 * A for loop goes through each item in a list and does something to it. 
-* The following function takes a list return the result of adding two to each item in it:
+* The following function takes a list returns the result of adding two to each item in the list:
 
 ```python
 def add_two_again(xs):
@@ -820,41 +820,76 @@ def mystery_func(xs):
 def gets_evens(xs):
 	new = []
 	for x in xs:
-		if x % 2 = 0:
+		if x % 2 == 0:
 			new.append(x)
 	return new
 
 >>> print get_evens([1,2,3,4,5,6])
 [2,4,6]
 ```
-
-Or for the pros:
+And for pros:
 
 ```python
-def get_evens(xs):
-	return filter(lambda x: x % 2 ==0,xs)
+>>> filter(lambda x: x % 2==0, [1,2,3,4,5,6])
+[2,4,6]
 ```
+
+What would we change to make it return only odd numbers?
 
 ---
 
-## Importing packages!
+## Importing packages
 
+Here we are importing a plotting package and a package that generates random numbers to plot 1000 random numbers between -1 and 2 
 
+```python
+from matplotlib import pyplot as plt
+import random
 
+toPlot = [] #The numbers to plot are put in here
 
+for _ in range(1000):
+        toPlot.append(random.uniform(-1,2))
+        
+plt.plot(toPlot)
+plt.xlabel('My X Label')
+plt.ylabel('My Y Label')
+plt.show() 
+```
 
+There is lots of support online for python packages: use google!
 
+---
 
+## Exercise 4: using google to help, plot 1000 numbers from a gaussain distribution with a mean of 1 and a standard deviation of 4.
 
+---
 
+## The answer...
 
+```python
+from matplotlib import pyplot as plt
+import random
 
+toPlot = []
 
+for _ in range(1000):
+        toPlot.append(random.gauss(1,4))
  
+        
+                  
+plt.plot(toPlot)
+plt.xlabel('My X Label')
+plt.ylabel('My y Label')
+plt.show() 
 
+```
 
+How else could we have found out how to use a gaussian distribution?
 
+---
 
+## Bonus exercise 1: Write a function that generates the fibonacci sequence and plot the first 200 fibonacci numbers. 
 
 </script>            
 </section>                                       
